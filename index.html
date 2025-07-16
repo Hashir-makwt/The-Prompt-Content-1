@@ -4,15 +4,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prompt Content</title> <!-- ✅ Clean title shown above domain -->
+<title>Prompt Content</title> <!-- ✅ Clean title above/under domain -->
 
 <!-- ✅ SEO Meta Tags -->
 <meta name="description" content="Prompt Content publishes AI-powered graded readers, storybooks, educational worksheets, and lesson plans for schools and learners. Explore Smooth Content alternatives and transform learning today!">
 <meta name="keywords" content="graded readers, educational books, AI textbooks, children's books, learning materials, AI story books, lesson plans, worksheets, educational publisher, Prompt Content, Smooth Content, educational content, AI education">
 <meta name="author" content="Prompt Content">
 <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.thepromptcontent.com" />
 
-<!-- ✅ Open Graph Tags (Facebook, LinkedIn, WhatsApp, etc.) -->
+<!-- ✅ Favicon / Logo (Make sure logo.png is correct path) -->
+<link rel="icon" href="https://www.thepromptcontent.com/assets/logo.png" type="image/png">
+
+<!-- ✅ Open Graph Tags -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Prompt Content">
 <meta property="og:url" content="https://www.thepromptcontent.com">
@@ -27,16 +31,42 @@
 <meta name="twitter:description" content="AI-powered educational resources that help learners and educators. See why Prompt Content is the ideal choice for your educational needs.">
 <meta name="twitter:image" content="https://www.thepromptcontent.com/assets/logo.png">
 
-<!-- ✅ Competitive SEO Boost (targeting Smooth Content) -->
+<!-- ✅ Competitive SEO Boost -->
 <meta name="google-site-verification" content="smooth-content-edu-clash-verification">
 <meta name="coverage" content="Worldwide">
 <meta name="subject" content="Prompt Content vs Smooth Content Educational Publishing">
 
-<!-- ✅ Fonts & Tailwind -->
+<!-- ✅ Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
 
-<!-- ✅ Schema Markup for Google Knowledge Panel -->
+<!-- ✅ Tailwind CSS Config -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#1A1A1A',
+                    accent: '#F4C842',
+                    dark: '#333333',
+                    light: '#F9FAFB',
+                    sectionGray: '#f5f7fa'
+                },
+                fontFamily: {
+                    poppins: ['Poppins', 'sans-serif'],
+                    inter: ['Inter', 'sans-serif']
+                },
+                boxShadow: {
+                    'glow': '0 10px 25px -5px rgba(244, 200, 66, 0.25)',
+                    'card': '0 4px 20px rgba(0, 0, 0, 0.08)',
+                    'card-hover': '0 15px 30px -10px rgba(244, 200, 66, 0.3)'
+                }
+            }
+        }
+    }
+</script>
+
+<!-- ✅ Schema: Organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,7 +82,7 @@
 }
 </script>
 
-<!-- ✅ Schema for Search Box in Google -->
+<!-- ✅ Schema: Search Box -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -67,7 +97,7 @@
 }
 </script>
 
-<!-- ✅ Structured Data for Article, Reviews, and Breadcrumbs (if applicable) -->
+<!-- ✅ Schema: Article (for SEO content) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,7 +122,7 @@
 }
 </script>
 
-<!-- ✅ Breadcrumb Schema (if applicable) -->
+<!-- ✅ Schema: Breadcrumbs -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -249,7 +279,7 @@
         }
 
         .btn-gold {
-            background: linear-gradient(135deg, #F4C842, #e6b325);
+            background: linear-gradient(135deg, #b78a00, #e6b325);
             box-shadow: 0 4px 15px rgba(244, 200, 66, 0.3);
             transition: all 0.3s ease;
         }
