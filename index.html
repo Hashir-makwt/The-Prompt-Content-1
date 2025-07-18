@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prompt Content</title> <!-- ✅ Clean title above/under domain -->
-
-  <!-- ✅ SEO Meta Tags -->
+  <title>Prompt Content - AI Educational Publishing</title>
+  
+  <!-- ✅ Improved SEO Meta Tags -->
   <meta name="description"
-    content="Prompt Content publishes AI-powered graded readers, storybooks, educational worksheets, and lesson plans for schools and learners. Explore Smooth Content alternatives and transform learning today!">
+    content="AI-powered graded readers, storybooks, textbooks, lesson plans, and worksheets for schools and learners. Better alternative to Smooth Content.">
   <meta name="keywords"
-    content="graded readers, educational books, AI textbooks, children's books, learning materials, AI story books, lesson plans, worksheets, educational publisher, Prompt Content, Smooth Content, educational content, AI education">
+    content="AI educational books, learning materials, AI textbooks, children's books, lesson plans, worksheets, Prompt Content, Smooth Content alternative">
   <meta name="author" content="Prompt Content">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.thepromptcontent.com" />
 
-  <!-- ✅ Favicon / Logo (Updated to favicon-v2.ico) -->
-  <link rel="icon" href="/assets/favicon-v2.ico.png" type="image/x-icon" sizes="96x96">
-  <link rel="shortcut icon" href="/assets/favicon-v2.ico.png" type="image/x-icon">
-  <link rel="apple-touch-icon" href="/assets/favicon-v2.ico.png">
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="/assets/logo.png" type="image/x-icon" sizes="96x96">
+  <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
 
   <!-- ✅ Open Graph Tags -->
   <meta property="og:type" content="website">
@@ -37,7 +37,7 @@
     content="AI-powered educational resources that help learners and educators. See why Prompt Content is the ideal choice for your educational needs.">
   <meta name="twitter:image" content="https://www.thepromptcontent.com/assets/logo.png">
 
-  <!-- ✅ Stronger SEO Boost -->
+  <!-- ✅ SEO Boost -->
   <meta name="google-site-verification" content="smooth-content-edu-clash-verification">
   <meta name="coverage" content="Worldwide">
   <meta name="subject" content="Prompt Content vs Smooth Content Educational Publishing">
@@ -156,8 +156,6 @@
 }
 </script>
 
-
-
     <style>
         html {
             scroll-behavior: smooth;
@@ -232,7 +230,7 @@
 
         .tab-content.active {
             display: block;
-            animation极狐: fadeIn 0.5s ease;
+            animation: fadeIn 0.5s ease;
         }
 
         @keyframes fadeIn {
@@ -259,7 +257,7 @@
             grid-row: span 2;
         }
 
-        .portfolio-item:n极th-child(5n) {
+        .portfolio-item:nth-child(5n) {
             grid-column: span 2;
         }
 
@@ -355,9 +353,11 @@
             opacity: 1;
         }
 
+        /* Updated Process Steps with cleaner bullet design */
         .process-step {
             position: relative;
             padding-left: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .process-step:before {
@@ -365,15 +365,11 @@
             position: absolute;
             left: 0;
             top: 0.5rem;
-            width: 24px;
-            height: 24px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
-            background-color: #F4C842;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
+            background-color: #333;
+            display: block;
         }
 
         .logo-container {
@@ -402,6 +398,7 @@
             border-radius: 12px;
         }
 
+        /* Improved Mobile Menu */
         .mobile-menu {
             display: none;
             position: fixed;
@@ -412,6 +409,8 @@
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
             z-index: 40;
             padding: 20px;
+            max-height: calc(100vh - 80px);
+            overflow-y: auto;
         }
 
         .mobile-menu.active {
@@ -464,9 +463,16 @@
             z-index: 99;
         }
 
+        /* Fixed footer horizontal scrolling */
+        footer {
+            background-color: #000000;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
         /* Mobile responsiveness fixes - UPDATED */
         @media (max-width: 768px) {
-
             /* Navbar fixes */
             nav {
                 padding: 0.8rem 1rem;
@@ -514,13 +520,15 @@
                 margin-bottom: 10px;
             }
 
-            /* Process steps */
+            /* Process steps - Mobile adjustments */
             .process-step {
-                padding-left: 0;
+                padding-left: 1.5rem;
             }
-
+            
             .process-step:before {
-                display: none;
+                top: 0.4rem;
+                width: 8px;
+                height: 8px;
             }
 
             /* Contact form */
@@ -552,7 +560,7 @@
                 text-align: center;
             }
 
-            /* NEW: Center cards on mobile */
+            /* Center cards on mobile */
             .grid-cols-1>div {
                 display: flex;
                 flex-direction: column;
@@ -560,13 +568,13 @@
                 text-align: center;
             }
 
-            /* NEW: Fix navbar overflow */
+            /* Fix navbar overflow */
             .nav-link {
                 padding: 10px 0;
                 text-align: center;
             }
 
-            /* NEW: Center form elements */
+            /* Center form elements */
             .contact-form input,
             .contact-form textarea,
             .contact-form button {
@@ -574,13 +582,13 @@
                 max-width: 100%;
             }
 
-            /* NEW: Center images */
+            /* Center images */
             img {
                 margin: 0 auto;
                 display: block;
             }
 
-            /* NEW: Fix footer layout */
+            /* Fix footer layout */
             footer .grid-cols-1 {
                 text-align: center;
             }
@@ -589,7 +597,7 @@
                 justify-content: center;
             }
 
-            /* NEW: Fix contact section alignment */
+            /* Fix contact section alignment */
             .flex.items-start {
                 flex-direction: column;
                 align-items: center;
@@ -607,9 +615,8 @@
             }
         }
 
-        /* NEW: Additional mobile fixes */
+        /* Additional mobile fixes */
         @media (max-width: 640px) {
-
             /* Center all text in cards */
             .service-card,
             .value-card {
@@ -641,15 +648,6 @@
                 margin: 0 auto;
             }
         }
-
-        /* NEW: Fix footer background */
-        footer {
-            background-color: #000000 !important;
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-            padding-left: calc(50vw - 50%);
-            padding-right: calc(50vw - 50%);
-        }
     </style>
 </head>
 
@@ -672,7 +670,7 @@
                 <a href="#contact" class="nav-link text-primary font-medium hover:text-accent">Contact</a>
             </div>
 
-            <button class="md:hidden" id="mobileMenuButton">
+            <button class="md:hidden" id="mobileMenuButton" aria-label="Toggle navigation menu" aria-expanded="false">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -703,7 +701,7 @@
                     Creating learning content that's thoughtful and inclusive
                 </h1>
                 <p class="text-base md:text-lg text-gray-600 mb-10" data-aos="fade-up" data-aos-delay="100">
-                    Because learning deserves results — not just resources.
+                    Because learning deserves results — not just resources.
                 </p>
                 <div class="flex flex-wrap gap-4 justify-center md:justify-start" data-aos="fade-up"
                     data-aos-delay="200">
@@ -728,7 +726,7 @@
                     <p class="text-base md:text-lg mb-6">
                         We envision a world where every teacher has access to high-quality, outcome-driven educational resources — where every learner engages with content that is not only engaging but purposefully designed to deliver measurable reading and learning outcomes.
 
-We seek to bridge the gap between creativity, pedagogy, and real classroom needs by making education more practical, accountable, and human-centered.
+We seek to bridge the gap between creativity, pedagogy, and real classroom needs by making education more practical, accountable, and human-centered.
 
                     </p>
                     <p class="text-base md:text-lg">
@@ -771,7 +769,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                         class="w-14 h-14 rounded-full bg-accent bg-opacity-10 flex items-center justify-center mb-6 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-accent card-icon" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            <path stroke-linecap="round" stroke极狐-linejoin="round" stroke-width="2"
                                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </div>
@@ -788,7 +786,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                         class="w-14 h-14 rounded-full bg-accent bg-opacity-10 flex items-center justify-center mb-6 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-accent card-icon" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap极狐="round" stroke-linejoin="round" stroke-width="2"
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
                     </div>
@@ -846,7 +844,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                     <p class="text-gray-600 text-center">
                         Adaptive learning materials that evolve based on student performance and engagement metrics.
                     </p>
-                </div>
+                </极狐div>
             </div>
         </div>
     </section>
@@ -879,7 +877,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                             <div>
                                 <h3 class="text-xl md:text-2xl font-bold mb-4">What we do</h3>
                                 <p class="text-base md:text-lg">
-                                    We create affordable, outcome-driven educational resources that combine literacy, pedagogy, and creativity — ensuring teachers have tools not just to teach but to measure progress, growth, and mastery.
+                                    We create affordable, outcome-driven educational resources that combine literacy, pedagogy, and creativity — ensuring teachers have tools not just to teach but to measure progress, growth, and mastery.
                                 </p>
                             </div>
                         </div>
@@ -890,7 +888,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                             <div>
                                 <h3 class="text-xl md:text-2xl font-bold mb-4">Why we do it</h3>
                                 <p class="text-base md:text-lg">
-                                    Because learning should lead somewhere. Because education is more powerful when progress is visible, achievable, and aligned to real classroom needs.
+                                    Because learning should lead somewhere. Because education is more powerful when progress is visible, achievable, and aligned to real classroom needs.
                                 </p>
                             </div>
                         </div>
@@ -901,7 +899,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                             <div>
                                 <h3 class="text-xl md:text-2xl font-bold mb-4">How we do it</h3>
                                 <p class="text-base md:text-lg">
-                                    We integrate pedagogy, design, technology, and assessment frameworks to deliver educational content that brings clarity to learning objectives and mastery tracking.
+                                    We integrate pedagogy, design, technology, and assessment frameworks to deliver educational content that brings clarity to learning objectives and mastery tracking.
                                 </p>
                             </div>
                         </div>
@@ -990,13 +988,15 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
 
     <section id="work-process" class="py-16 sm:py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm极狐:mb-16" data-aos="fade-up">
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Process</h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     A systematic approach to creating exceptional educational content
                 </p>
             </div>
 
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-8">
                     <div class="process-step">
                         <h3 class="text-xl font-bold mb-2">Start with SROs:</h3>
                         <p class="text-gray-600">
@@ -1021,7 +1021,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                     <div class="process-step">
                         <h3 class="text-xl font-bold mb-2">Deliver with Impact:</h3>
                         <p class="text-gray-600">
-                            Deliver with Impact: Materials ready for classroom use, ensuring teachers can track student progress with ease.
+                            Materials ready for classroom use, ensuring teachers can track student progress with ease.
                         </p>
                     </div>
                 </div>
@@ -1067,7 +1067,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                     data-aos="fade-up" data-aos-delay="200">
                     <div class="bg-gray-200 border-2 border-dashed w-full h-full"></div>
                     <div
-                        class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-h极狐over:opacity-80 transition-opacity duration-300 flex flex-col justify-end p-6">
                         <h3 class="text-white text-xl font-bold mb-2">Digital Literacy Program</h3>
                         <p class="text-white mb-4">Comprehensive digital skills curriculum for adult learners</p>
                         <button class="btn-outline text-white border-white hover:bg-white hover:text-primary w-max">View
@@ -1077,7 +1077,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
 
                 <div class="portfolio-item rounded-xl overflow-hidden relative group card-without-icon"
                     data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-gray-200 border-2 border-dashed w-full h-full"></div>
+                    <div class="bg-gray-200 border-2 border-dashed w-full h-full"></极狐div>
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex flex-col justify-end p-6">
                         <h3 class="text-white text-xl font-bold mb-2">Cultural Heritage Readers</h3>
@@ -1173,7 +1173,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                         </div>
 
                         <div>
-                            <label for="email" class="block text-gray-700 mb极狐-2">Email Address</label>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
                             <input type="email" id="email" name="email"
                                 class="w-full px-4 py-3 rounded-lg focus:outline-none" placeholder="john@example.com"
                                 required>
@@ -1248,7 +1248,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                 </div>
 
                 <div>
-                    <h4 class="font-bold text-lg mb-6 text-center md:text-left">Services</h4>
+                    <h3 class="font-bold text-lg mb-6 text-center md:text-left">Services</h3>
                     <ul class="space-y-3 text-center md:text-left">
                         <li><a href="#" class="footer-link text-gray-300 hover:text-accent transition-colors">Graded
                                 Readers</a></li>
@@ -1267,7 +1267,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                 </div>
 
                 <div>
-                    <h4 class="font-bold text-lg mb-6 text-center md:text-left">Company</h4>
+                    <h3 class="font-bold text-lg mb-6 text-center md:text-left">Company</h3>
                     <ul class="space-y-3 text-center md:text-left">
                         <li><a href="#about" class="footer-link text-gray-300 hover:text-accent transition-colors">About
                                 Us</a></li>
@@ -1285,7 +1285,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
                 </div>
 
                 <div>
-                    <h4 class="font-bold text-lg mb-6 text-center md:text-left">Legal</h4>
+                    <h3 class="font-bold text-lg mb-6 text-center md:text-left">Legal</h3>
                     <ul class="space-y-3 text-center md:text-left">
                         <li><a href="#" class="footer-link text-gray-300 hover:text-accent transition-colors">Privacy
                                 Policy</a></li>
@@ -1368,6 +1368,8 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
         const mobileMenu = document.getElementById('mobileMenu');
 
         mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
             mobileMenu.classList.toggle('active');
             if (mobileMenu.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
@@ -1379,6 +1381,7 @@ We seek to bridge the gap between creativity, pedagogy, and real classroom needs
         document.addEventListener('click', (e) => {
             if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
                 mobileMenu.classList.remove('active');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
                 document.body.style.overflow = 'auto';
             }
         });
