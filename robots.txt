@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /drafts/
+Allow: /
+Sitemap: https://www.thepromptcontent.com/sitemap.xml
+Host: https://www.thepromptcontent.com
