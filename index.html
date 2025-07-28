@@ -3547,7 +3547,7 @@
       // Validate if email is a valid Gmail address
       const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
       if (!emailRegex.test(email)) {
-        responseBox.textContent = "❌ Please enter a valid Gmail address.";
+        responseBox.textContent = "Please enter a valid Gmail address.";
         responseBox.classList.remove(
           "hidden",
           "bg-green-100",
@@ -3556,13 +3556,16 @@
           "text-red-700"
         );
         responseBox.classList.add(
-          "bg-gray-100",
-          "text-gray-800",
-          "border",
-          "border-gray-300",
-          "p-3",
-          "rounded-md",
-          "mt-3"
+          "bg-red-100", // Red background for error
+          "text-red-700", // Red text
+          "border-dotted", // Dotted border
+          "border-2", // Border thickness
+          "border-red-700", // Red border color
+          "p-4", // Padding for better spacing
+          "rounded-md", // Rounded corners for a clean look
+          "mt-3", // Margin on top to separate from other content
+          "font-semibold", // Bold text for the error message
+          "shadow-md" // Light shadow for depth
         );
         return; // Stop the form submission if email is invalid
       }
@@ -3571,7 +3574,7 @@
       const [localPart, domain] = email.split('@');
       const validEmails = ['hashirmak66']; // Simulate an array of valid email prefixes for the example
       if (!validEmails.includes(localPart)) {
-        responseBox.textContent = "❌ This email address doesn't exist.";
+        responseBox.textContent = "This email address doesn't exist.";
         responseBox.classList.remove(
           "hidden",
           "bg-green-100",
@@ -3580,13 +3583,16 @@
           "text-red-700"
         );
         responseBox.classList.add(
-          "bg-gray-100",
-          "text-gray-800",
-          "border",
-          "border-gray-300",
-          "p-3",
-          "rounded-md",
-          "mt-3"
+          "bg-red-100", // Red background for error
+          "text-red-700", // Red text
+          "border-dotted", // Dotted border
+          "border-2", // Border thickness
+          "border-red-700", // Red border color
+          "p-4", // Padding for better spacing
+          "rounded-md", // Rounded corners for a clean look
+          "mt-3", // Margin on top to separate from other content
+          "font-semibold", // Bold text for the error message
+          "shadow-md" // Light shadow for depth
         );
         return; // Stop the form submission if the email doesn't exist in your list
       }
@@ -3616,7 +3622,7 @@
         }
       } catch (error) {
         responseBox.textContent =
-          "❌ Oops! Something went wrong. Please try again later.";
+          "Oops! Something went wrong. Please try again later.";
         responseBox.classList.remove(
           "hidden",
           "bg-green-100",
@@ -3625,13 +3631,16 @@
           "text-red-700"
         );
         responseBox.classList.add(
-          "bg-gray-100",
-          "text-gray-800",
-          "border",
-          "border-gray-300",
-          "p-3",
-          "rounded-md",
-          "mt-3"
+          "bg-red-100", // Red background for error
+          "text-red-700", // Red text
+          "border-dotted", // Dotted border
+          "border-2", // Border thickness
+          "border-red-700", // Red border color
+          "p-4", // Padding for better spacing
+          "rounded-md", // Rounded corners for a clean look
+          "mt-3", // Margin on top to separate from other content
+          "font-semibold", // Bold text for the error message
+          "shadow-md" // Light shadow for depth
         );
       }
     });
@@ -3639,6 +3648,6 @@
 </script>
 
 
-    </script>
+
   </body>
 </html>
