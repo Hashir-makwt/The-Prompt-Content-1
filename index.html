@@ -3567,6 +3567,30 @@
         return; // Stop the form submission if email is invalid
       }
 
+      // Simulate checking if the first part of the email exists (this is only for format validation)
+      const [localPart, domain] = email.split('@');
+      const validEmails = ['hashirmak66']; // Simulate an array of valid email prefixes for the example
+      if (!validEmails.includes(localPart)) {
+        responseBox.textContent = "❌ This email address doesn't exist.";
+        responseBox.classList.remove(
+          "hidden",
+          "bg-green-100",
+          "text-green-700",
+          "bg-red-100",
+          "text-red-700"
+        );
+        responseBox.classList.add(
+          "bg-gray-100",
+          "text-gray-800",
+          "border",
+          "border-gray-300",
+          "p-3",
+          "rounded-md",
+          "mt-3"
+        );
+        return; // Stop the form submission if the email doesn't exist in your list
+      }
+
       try {
         const response = await fetch("https://formspree.io/f/myzpynpy", {
           method: "POST",
@@ -3613,6 +3637,7 @@
     });
   });
 </script>
+
 
     </script>
   </body>
