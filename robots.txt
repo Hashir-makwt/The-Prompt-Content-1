@@ -4,6 +4,6 @@ Disallow: /login/
 Disallow: /dashboard/
 Disallow: /private/
 Disallow: /drafts/
-Allow: /
+Allow: /  # Allow all other pages to be crawled
 Sitemap: https://www.thepromptcontent.com/sitemap.xml
 Host: https://www.thepromptcontent.com
